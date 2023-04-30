@@ -11,7 +11,7 @@ const port = 2005
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-mongoose.Promise = global.Promise; // Utilizar promesas nativas de Node.js
+mongoose.Promise = global.Promise; // Utilddizar promesas nativas de Node.js
 mongoose.connect(urlMongoose, { useNewUrlParser: true })
   .then(() => console.log('Conexión exitosa a la base de datos'))
   .catch((err) => console.error(err));
